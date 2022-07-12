@@ -5,18 +5,17 @@
 // Input: [3,5,2,1]
 // Output: 5
 
-
-
-
+const arr = [3,5,2,12,10,]
 const maxValue = (myArray) => {
     let max =[];
+                // 3>0? true, 3>5 ? true, 5>2 ? false, 5>12? true, 12>10 ? false. hasil akhir nilai terbesar 12
     for(let i=0; i< myArray.length; i++){
         if(myArray[i] > max)
-        max = arr[i]   
+        max = myArray[i]   
     }
     return max;
 }
-const arr = [3,5,2,12,10,]
+
 console.log(maxValue(arr))
 
 
@@ -24,23 +23,3 @@ console.log(maxValue(arr))
 
 
 
-// const arr =[3,5,2,1,10,12];
-
-// function forEach (array,callback){
-//     let newArray = [];
-//     let min =[]
-    
-//     for (var i = 0; i < array.length; i++) {
-//         if (array[i] < min) {
-//           min = array[i];
-//           newArray.push(callback(array[i]))
-//         }
-//     }
-
-//     return newArray;   
-// }
-// const maxArray = forEach(arr, (item)=>{
-// return item
-// });
-
-// console.log(maxArray);
