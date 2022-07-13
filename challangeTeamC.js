@@ -7,7 +7,7 @@
 //       max -> 10
 
 
-let myArray = [1, 3, 5, 7, 9,8, 10]
+let myArray = [1, 3, 7,5, 10, 9,8]
 const minMaxOdd = (array) => {
 
     let min = array[0];
