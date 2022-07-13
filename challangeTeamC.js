@@ -7,21 +7,21 @@
 //       max -> 10
 
 
-let myArray = [1, 3, 5, 7, 9, 10]
+let myArray = [1, 3, 5, 7, 9,8, 10]
 const minMaxOdd = (array) => {
 
     let min = array[0];
     let max = array[0];
 
     for (let i = 0; i < array.length; i++) {
-        if (array[i] > min) {
-            min = array[i];
-        } if (array[i < max]) {
+        if (array[i] > max) {
             max = array[i];
+        } if (array[i < min]) {
+            min = array[i];
         }
     }
 
-    let odd = myArray.filter((array) => { return array % 2 == 1 })
+    let odd = myArray.filter((value) => { return value > min && value <max && value %2==1})
     console.log(odd)
 
     let result = ([max, min]);
